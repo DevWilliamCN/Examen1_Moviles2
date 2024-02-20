@@ -8,11 +8,11 @@ import {
   FlatList,
 } from "react-native";
 import { style_01 } from "../styles/style_01";
-import { getFirstGen } from "../components/getFirstGen";
-import { getSecondGen } from "../components/getSecondGen";
-import { getThirdGen } from "../components/getThirdGen";
-import { getFourthGen } from "../components/getFourthGen";
-import { getFifthGen } from "../components/getFifthGen";
+import { PrimeraGeneracion } from "../components/getPrimeraGeneracion";
+import { getSegundaGeneracion } from "../components/getSegundaGeneracion";
+import { getTerceraGeneracion } from "../components/getTerceraGeneracion";
+import { getCuartaGeneracion } from "../components/getCuartaGeneracion";
+import { getQuintaGeneracion } from "../components/getQuintaGeneracion";
 
 const Home = ({ navigation }) => {
   const [pokemons, obtenerPokemon] = useState([]);
@@ -25,19 +25,19 @@ const Home = ({ navigation }) => {
   const buscaPokemon = async (gen) => {
     switch (gen) {
       case "First":
-        obtenerPokemon(await getFirstGen());
+        obtenerPokemon(await PrimeraGeneracion());
         break;
       case "Second":
-        obtenerPokemon(await getSecondGen());
+        obtenerPokemon(await getSegundaGeneracion());
         break;
       case "Third":
-        obtenerPokemon(await getThirdGen());
+        obtenerPokemon(await getTerceraGeneracion());
         break;
       case "Fourth":
-        obtenerPokemon(await getFourthGen());
+        obtenerPokemon(await getCuartaGeneracion());
         break;
       case "Fifth":
-        obtenerPokemon(await getFifthGen());
+        obtenerPokemon(await getQuintaGeneracion());
         break;
       default:
         obtenerPokemon([]);

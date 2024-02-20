@@ -6,15 +6,11 @@ import { FlatList, View, Text, Image, StyleSheet, TouchableOpacity } from 'react
 
 
 import Home from './src/views/home';
-
-
 import { SafeAreaView } from 'react-native-safe-area-context';
-import PokeDetail from './src/views/pokeDetail';
+import Detalles_Pokemones from './src/views/Detalles_Pokemones';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
-
-
 
 
 function DrawNav() {
@@ -44,7 +40,7 @@ function DrawNav() {
       }
     }>
     <Drawer.Screen name="Home" component={Home}/>
-    <Drawer.Screen name="pokeDetail" component={ PokeDetail   }/>
+    <Drawer.Screen name="pokeDetail" component={ Detalles_Pokemones   }/>
 
 
 
@@ -62,7 +58,7 @@ function App() {
         />
         <Stack.Screen
           name="PokeDetail"
-          component={PokeDetail}
+          component={Detalles_Pokemones}
           options={{ title: 'Pokémon Data' }}
         />
       </Stack.Navigator>

@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     alignItems: 'center',
     padding: 10,
-    backgroundColor: '#FFFF00', // Puedes cambiar este color como prefieras
+    backgroundColor: '#FFFF00', 
   },
   pokemonImage: {
     width: 100,
@@ -32,21 +32,21 @@ const styles = StyleSheet.create({
   detailsContainer: {
     flex: 1,
     padding: 10,
-    backgroundColor: 'yellow', // Puedes cambiar este color como prefieras
+    backgroundColor: 'yellow', 
     borderRadius: 10,
   },
   name: {
     fontWeight: 'bold',
     fontSize: 22,
-    color: 'black', // Puedes cambiar este color como prefieras
+    color: 'black', 
     marginBottom: 10,
   },
   features: {
     fontSize: 16,
-    color: 'black', // Puedes cambiar este color como prefieras
+    color: 'black', 
   },
   sectionContainer: {
-    backgroundColor: 'white', // Puedes cambiar este color como prefieras
+    backgroundColor: 'white', 
     borderRadius: 10,
     padding: 10,
     marginTop: 10,
