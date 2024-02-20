@@ -9,9 +9,11 @@ import Home from './src/views/home';
 
 
 import { SafeAreaView } from 'react-native-safe-area-context';
+import PokeDetail from './src/views/pokeDetail';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
+
 
 
 
@@ -42,19 +44,31 @@ function DrawNav() {
       }
     }>
     <Drawer.Screen name="Home" component={Home}/>
+    <Drawer.Screen name="pokeDetail" component={ PokeDetail   }/>
+
+
 
     </Drawer.Navigator>
   );
 }
 
-function App(){
-  return(
+function App() {
+  return (
     <NavigationContainer>
-      <DrawNav/>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Home"
+          component={Home}
+        />
+        <Stack.Screen
+          name="PokeDetail"
+          component={PokeDetail}
+          options={{ title: 'Pokémon Data' }}
+        />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 }
-
 
 
 
