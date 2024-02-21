@@ -63,7 +63,7 @@ export const style_01 = StyleSheet.create({
   },
 
   pokemonImage: {
-    width: 50, 
+    width: 50,
     height: 50,
   },
 
@@ -86,17 +86,16 @@ export const style_01 = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#FFFFFF",
     borderRadius: 10,
-    padding: 10,
     marginVertical: 5,
     marginHorizontal: 10,
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
-      height: 2,
+      height: 1,
     },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5,
+    shadowOpacity: 0.22,
+    shadowRadius: 2.22,
+    elevation: 3,
   },
   pokemonImage: {
     width: 50,
@@ -152,21 +151,19 @@ export const style_01 = StyleSheet.create({
   navBar: {
     flexDirection: "row",
     justifyContent: "space-around",
-    backgroundColor: "#ecf0f1", 
-    paddingVertical: 5, 
-    paddingHorizontal: 10, 
-    
+    backgroundColor: "#FFFFFF",
+    paddingVertical: 5,
+    paddingHorizontal: 10,
   },
   navItem: {
     paddingVertical: 8,
-    paddingHorizontal: 7, 
-    borderRadius: 5, 
-    backgroundColor: "#3498db", 
+    paddingHorizontal: 7,
+    borderRadius: 5,
+    backgroundColor: "#3498db",
     color: "white",
     fontWeight: "bold",
     textAlign: "center",
-    marginHorizontal: 2, 
-    
+    marginHorizontal: 2,
   },
 
   itemContainer: {
@@ -200,6 +197,7 @@ export const style_01 = StyleSheet.create({
 
   header: {
     width: "100%",
+    backgroundColor: "#FFFFFF",
     alignItems: "center",
     justifyContent: "center",
     padding: 10,
@@ -208,4 +206,15 @@ export const style_01 = StyleSheet.create({
     height: 100,
     resizeMode: "contain",
   },
+  //header: {
+  // width: "100%",
+  //backgroundColor: '#FFFFFF',
+  // alignItems: "center",
+  // justifyContent: "center",
+  // padding: 10
+  // },
+  //logoPM: {
+  //height: 100,
+  //resizeMode: "contain",
+  //},
 });

@@ -1,69 +1,87 @@
-// PokeDetailStyles.js
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
-const styles = StyleSheet.create({
+export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5F5F5',
-  },
-  scrollView: {
-    marginHorizontal: 10,
+    backgroundColor: "#FFFFFF",
   },
   header: {
-    alignItems: 'center',
-    marginTop: 20,
+    backgroundColor: "#FFCB05",
+    padding: 10,
+    alignItems: "center",
+    backgroundColor: "#FFFFFF",
+    padding: 10,
+    alignItems: "center",
+    // borderWidth: 0,
+    // shadowOpacity: 0,
+    borderBottomWidth: 2,
+    borderBottomColor: "#E0E0E0",
   },
   logo: {
-    width: '100%',
+    width: "100%",
     height: 100,
-    resizeMode: 'contain',
+    resizeMode: "contain",
   },
   infoContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center',
+    backgroundColor: "#FFCB05",
+    borderRadius: 10,
     padding: 10,
-    backgroundColor: '#FFFF00', 
+    alignItems: "center",
+    margin: 10,
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+    borderColor: "#0000FF",
+    borderWidth: 2,
+    borderRadius: 10,
   },
   pokemonImage: {
     width: 100,
     height: 100,
+    resizeMode: "contain",
+    flex: 0,
+    width: 80,
+    height: 80,
+    marginRight: 10,
   },
-  detailsContainer: {
+  NombrePokemon: {
+    fontSize: 24,
+    fontWeight: "bold",
+    marginTop: 5,
+  },
+  textContainer: {
     flex: 1,
     padding: 10,
-    backgroundColor: 'yellow', 
-    borderRadius: 10,
-  },
-  name: {
-    fontWeight: 'bold',
-    fontSize: 22,
-    color: 'black', 
-    marginBottom: 10,
   },
   features: {
     fontSize: 16,
-    color: 'black', 
+    color: "#000",
+    textAlign: "left",
+    alignSelf: "flex-start",
+    width: "100%",
   },
   sectionContainer: {
-    backgroundColor: 'white', 
+    backgroundColor: "#FFCB05",
     borderRadius: 10,
     padding: 10,
-    marginTop: 10,
+    margin: 10,
+    borderColor: "#0000FF",
+    borderWidth: 2,
+    borderRadius: 10,
   },
   sectionTitle: {
-    fontWeight: 'bold',
     fontSize: 18,
-    marginBottom: 8,
+    fontWeight: "bold",
+    marginBottom: 5,
   },
   type: {
     fontSize: 16,
-    marginBottom: 4,
+    color: "#000",
+    marginBottom: 5,
   },
   move: {
     fontSize: 16,
-    marginBottom: 4,
+    color: "#000",
+    marginBottom: 5,
   },
 });
-
-export default styles;

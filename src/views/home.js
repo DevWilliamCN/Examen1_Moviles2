@@ -64,9 +64,9 @@ const Home = ({ navigation }) => {
 
   return (
     <SafeAreaView style={style_01.container}>
-      <View style={style_01.header}>
-        <Image source={require("../imgs/logoPM.png")} style={style_01.logoPM} />
-      </View>
+     <View style={style_01.header}>
+    <Image source={require("../imgs/logoPM.png")} style={style_01.logoPM} />
+  </View>
       <View style={style_01.navBar}>
         <TouchableOpacity onPress={() => obtenerGen("First")}>
           <Text style={style_01.navItem}>First gen</Text>

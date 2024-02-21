@@ -1,4 +1,4 @@
-const POKE_API_URL = 'https://pokeapi.co/api/v2/pokemon?offset=20&limit=20';
+const POKE_API_URL = "https://pokeapi.co/api/v2/pokemon?offset=20&limit=20";
 
 export const PrimeraGeneracion = async () => {
   try {
@@ -6,7 +6,10 @@ export const PrimeraGeneracion = async () => {
     const data = await response.json();
     return data.results;
   } catch (error) {
-    console.error('Error fetching fifth generation Pokémon:', error);
+    console.error(
+      "Atencion Usuario error al recuperar Pokémon de Primera generación:",
+      error
+    );
     return [];
   }
 };

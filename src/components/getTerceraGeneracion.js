@@ -1,5 +1,5 @@
 // getThirdGen.js
-const POKE_API_URL = 'https://pokeapi.co/api/v2/pokemon';
+const POKE_API_URL = "https://pokeapi.co/api/v2/pokemon";
 
 export const getTerceraGeneracion = async () => {
   try {
@@ -7,7 +7,10 @@ export const getTerceraGeneracion = async () => {
     const data = await response.json();
     return data.results;
   } catch (error) {
-    console.error('Atencion Usuario error al recuperar Pokémon de tercera generación:', error);
+    console.error(
+      "Atencion Usuario error al recuperar Pokémon de tercera generación:",
+      error
+    );
     return [];
   }
 };
